@@ -2,10 +2,11 @@
 let movers = new Array(200);
 let newX;
 let newY;
-let width = 640;
-let height = 480
+let width = document.documentElement.clientWidth;
+let height = document.documentElement.clientHeight;
 
 function setup() {
+  console.log(width);
   createCanvas(width, height);
   // frameRate(25);
   smooth();
